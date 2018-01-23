@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Personal Homepage</title>
+	<link rel="stylesheet" type="text/css" href="Personal Website.css">
+	<script type="text/javascript" src="Personal Website.js"></script>
+</head>
+
+<body onload="initialize();">
+	<div id="columnL">
+		<!-- <div class="navigation"
+		style="background-color:#F08880; color:#FFF;"
+		onclick="displaycontent(this);">Home</div>
+		<div class="navigation" onclick="displaycontent(this);">Profile</div>
+		<div class="navigation" onclick="displaycontent(this);">Facts</div>
+		<div class="navigation" onclick="displaycontent(this);">Contact</div> -->
+	</div>
+
+	<div id="disclaimer">This page is for assignment purposes.</div>
+
+	<div class="content" id="home">
+		<div class="subpagetitle">Personal Homepage</div>
+		<div class="subpagesubtitle">by Utkan Gezer</div>
+		<p>Welcome to my own, personal, homepage.</p>
+		<p>This page doesn't do much, other than possibly being an example to learn from. I have used <a href="http://www.sublimetext.com/3" target="_blank">Sublime Text 3</a> while writing the code, and <a href="http://www.dotpdn.com/downloads/pdn.html" target="_blank">Paint.NET</a> while editing the images. Both are free (unless you like them so much that you want to pay for them) and have been good enough.</p>
+	</div>
+
+	<div class="content" id="profile">
+		<div class="subpagetitle">Personal Profile</div>
+		<div class="subpagesubtitle">by Utkan Gezer</div>
+		<p>Hello, <span id="whoever">whoever</span>. My name is Utkan.</p>
+		<p>I am a man and have been alive for the past 21 years. For all those years, all those days, I have been waking up with the sun, hoping and occasionally trying to get the best out of the life.</p>
+		<p>On top of everything else, I enjoy bringing people that I truly love on cloud nine the most. For me, it is the heaven on earth to be the bliss of them.</p>
+		<p>And that unfortunately isn't always possible. I hope more than I do, I find myself killing time more than I live. Decisions; there are no wrong or right decisions and we live our decisions. I occasionally decide on going out and doing one of the following and alikes:</p>
+		<ul>
+			<li>Sitting on isolated benches or laying down anywhere uncrowded</li>
+			<li>Viewing grasses and leaves and the sky</li>
+			<li>Cycling and climbing trees</li>
+			<li>Listening to music and daydreaming</li>
+			<li>Creating scenarios on my mind of conversations with people I had met</li>
+		</ul>
+		<p>All alone. The moon and the cats, no wonder why the rest doesn't love me as much.</p>
+	</div>
+
+	<div class="content" id="facts">
+		<div class="subpagetitle">Personal Facts</div>
+		<div class="subpagesubtitle">by Utkan Gezer</div>
+		<p>Instead of hobbies, let me write down some random information here, for the sake of using many more of the CSS features.</p>
+		<h3 id="scheduletitle" onclick="scheduletoggle();">Weekly Academic Schedule</h3>
+		<div class="tablewrapper">
+			<table id="schedule">
+				<tr>
+					<td class="headercell"></td>
+					<td class="headercell">9.00 ~</td>
+					<td class="headercell">10.00 ~</td>
+					<td class="headercell">11.00 ~</td>
+					<td class="headercell">12.00 ~</td>
+					<td class="headercell">13.00 ~</td>
+					<td class="headercell">14.00 ~</td>
+					<td class="headercell">15.00 ~</td>
+					<td class="headercell">16.00 ~</td>
+					<td class="headercell">17.00 ~</td>
+				</tr>
+				<tr>
+					<td>Monday</td>
+					<td></td>
+					<td class="filled">phys 130</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="filled">cmpe 150</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Tuesday</td>
+					<td class="filled">math 102</td>
+					<td class="filled">math 102</td>
+					<td class="filled">cmpe ps</td>
+					<td class="filled">cmpe ps</td>
+					<td class="filled">ec 102</td>
+					<td class="filled">ec 102</td>
+					<td class="filled">cet 102</td>
+					<td class="filled">cet 102</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Wednesday</td>
+					<td></td>
+					<td class="filled">phys 130</td>
+					<td></td>
+					<td></td>
+					<td class="filled">phys lab</td>
+					<td class="filled">phys lab</td>
+					<td class="filled">cmpe lab</td>
+					<td class="filled">cmpe lab</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Thursday</td>
+					<td class="filled">math 102</td>
+					<td class="filled">math 102</td>
+					<td></td>
+					<td></td>
+					<td class="filled">ec 102</td>
+					<td></td>
+					<td class="filled">cet 102</td>
+					<td class="filled">cet 102</td>
+					<td class="filled">cet 102</td>
+				</tr>
+				<tr>
+					<td>Friday</td>
+					<td></td>
+					<td class="filled">phys 130</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+
+		<h3>Some Wallpapers</h3>
+		<p>I don't know, if you want, you may expand and have them to yourself, somehow.</p>
+		<p>Clicking on the both ends of an expanded image will let you navigate back and forth. Clicking outside will get you out. If you are using a touch device, additionally, you can also swipe through the images.</p>
+		<div id="wallpapercontainer">
+			<!-- <img class="wallpaperthumbnail" src="Wallpaper Thumbnails\thumbnail Bank out of nowhere.jpg" title="Bank out of nowhere">
+			<img class="wallpaperthumbnail" src="Wallpaper Thumbnails\thumbnail Barren landscape.jpg" title="Barren landscape">
+			<img class="wallpaperthumbnail" src="Wallpaper Thumbnails\thumbnail Dog thinking on life and stuff.jpg" title="Dog thinking on life and stuff">
+			<img class="wallpaperthumbnail" src="Wallpaper Thumbnails\thumbnail Kill your television.jpg" title="Kill your television">
+			<img class="wallpaperthumbnail" src="Wallpaper Thumbnails\thumbnail Lighthouse out of nowhere.jpg" title="Lighthouse out of nowhere">
+			<img class="wallpaperthumbnail" src="Wallpaper Thumbnails\thumbnail Mystery hill with mysterious visitor.jpg" title="Mystery hill with mysterious visitor">
+			<img class="wallpaperthumbnail" src="Wallpaper Thumbnails\thumbnail Possibly toxic mushroom.jpg" title="Possibly toxic mushroom">
+			<img class="wallpaperthumbnail" src="Wallpaper Thumbnails\thumbnail Red maple leaves.jpg" title="Red maple leaves">
+			<img class="wallpaperthumbnail" src="Wallpaper Thumbnails\thumbnail This guy knows how to live.jpg" title="This guy knows how to live">
+			<img class="wallpaperthumbnail" src="Wallpaper Thumbnails\thumbnail This kid's on it.png" title="This kid's on it">
+			<img class="wallpaperthumbnail" src="Wallpaper Thumbnails\thumbnail Tree on a hill.jpg" title="Tree on a hill">
+			<img class="wallpaperthumbnail" src="Wallpaper Thumbnails\thumbnail Tree out of nowhere.jpg" title="Tree out of nowhere">
+			<img class="wallpaperthumbnail" src="Wallpaper Thumbnails\thumbnail Woah not gonna happen.jpg" title="Woah not gonna happen"> -->
+		</div>
+	</div>
+	
+	<div class="content" id="contact">
+		<div class="subpagetitle">Personal Contact</div>
+		<div class="subpagesubtitle">by Utkan Gezer</div>
+		<table id="contacttable">
+			<tr>
+				<td class="firstcolumn">phone:</td>
+				<td><span id="phonenumber"></span> <span class="faint">(calling, sms and mms)</span></td>
+			</tr>
+			<tr>
+				<td class="firstcolumn">e-mail:</td>
+				<td><span onclick="selectall(this);" id="email">utkangezer@hotmail.com</span> <span class="faint">or</span> <span onclick="selectall(this);" id="email">utkangezer@gmail.com</span></td>
+			</tr>
+			<tr>
+				<td class="firstcolumn">in person:</td>
+				<td>3. Kuzey 509-B</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+
+</html>

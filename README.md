@@ -24,3 +24,8 @@ Some of the features I had implemented to that website are, I believe, noteworth
 I remember being especially proud about the last two items. Most of those,
 however, were not put into evaluation, since Javascript techniques and skills were not
 a part of this assignment.
+
+I consider the feature I have mentioned in bold letters as a feature that all the modern touch
+devices should be having on their picture-album-displaying interfaces.
+It is both more satisfying and less straining to browse through a collection of images on a carousel
+with accelerated swiping, than having it 1:1.

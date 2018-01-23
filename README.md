@@ -29,3 +29,4 @@ I consider the feature I have mentioned in bold letters as a feature that all th
 devices should be having on their picture-album-displaying interfaces.
 It is both more satisfying and less straining to browse through a collection of images on a carousel
 with accelerated swiping, than having it 1:1.
+This is a feature that I miss on most of my devices, if not all.
